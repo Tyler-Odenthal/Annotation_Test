@@ -7,7 +7,7 @@ import csv
 
 rf = Roboflow(api_key="API_KEY")
 project = rf.workspace("WORKSPACE_ID").project("PROJECT_ID")
-# dataset = project.version(2).download("yolov5") # UNCOMMENT TO DOWNLOAD DATASET IN YOLOv7 FORMAT 
+dataset = project.version(2).download("yolov5") # UNCOMMENT TO DOWNLOAD DATASET IN YOLOv7 FORMAT 
 model = project.version(2).model
 
 # set model ID and split it
